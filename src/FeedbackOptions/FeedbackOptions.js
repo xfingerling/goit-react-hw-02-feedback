@@ -5,12 +5,12 @@ import FeedbackButton from "../FeedbackButton/FeedbackButton";
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
   <>
-    {options.map((el) => {
+    {options.map(({ name, text }) => {
       return (
         <FeedbackButton
-          key={el.name}
-          name={el.name}
-          text={el.text}
+          key={name}
+          name={name}
+          text={text}
           handleClick={onLeaveFeedback}
         />
       );

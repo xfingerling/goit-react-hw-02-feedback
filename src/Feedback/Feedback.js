@@ -15,7 +15,9 @@ export default class Feedback extends Component {
   };
 
   countTotalFeedback() {
-    return this.state.good + this.state.neutral + this.state.bad;
+    const { good, neutral, bad } = this.state;
+
+    return good + neutral + bad;
   }
 
   countPositiveFeedbackPercentage() {
@@ -27,6 +29,8 @@ export default class Feedback extends Component {
   }
 
   render() {
+    const { good, neutral, bad } = this.state;
+
     return (
       <div>
         <FeedbackSection title={"Please leave feedback"}>
@@ -45,9 +49,9 @@ export default class Feedback extends Component {
             <FeedbackNotification message={"No feedback given"} />
           ) : (
             <FeedbackStatistics
-              good={this.state.good}
-              neutral={this.state.neutral}
-              bad={this.state.bad}
+              good={good}
+              neutral={neutral}
+              bad={bad}
               total={this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
