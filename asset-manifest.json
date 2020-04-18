@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/goit-react-hw-02-feedback/static/js/main.bc39e121.chunk.js",
-    "main.js.map": "/goit-react-hw-02-feedback/static/js/main.bc39e121.chunk.js.map",
-    "runtime-main.js": "/goit-react-hw-02-feedback/static/js/runtime-main.50268c19.js",
-    "runtime-main.js.map": "/goit-react-hw-02-feedback/static/js/runtime-main.50268c19.js.map",
-    "static/js/2.74f83195.chunk.js": "/goit-react-hw-02-feedback/static/js/2.74f83195.chunk.js",
-    "static/js/2.74f83195.chunk.js.map": "/goit-react-hw-02-feedback/static/js/2.74f83195.chunk.js.map",
-    "index.html": "/goit-react-hw-02-feedback/index.html",
-    "precache-manifest.f861d6dff3e2173483228c8c5162cc0c.js": "/goit-react-hw-02-feedback/precache-manifest.f861d6dff3e2173483228c8c5162cc0c.js",
-    "service-worker.js": "/goit-react-hw-02-feedback/service-worker.js",
-    "static/js/2.74f83195.chunk.js.LICENSE.txt": "/goit-react-hw-02-feedback/static/js/2.74f83195.chunk.js.LICENSE.txt"
+    "main.js": "/goit-react-hw-02-phonebook/static/js/main.20f434e9.chunk.js",
+    "main.js.map": "/goit-react-hw-02-phonebook/static/js/main.20f434e9.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-02-phonebook/static/js/runtime-main.fffbe61b.js",
+    "runtime-main.js.map": "/goit-react-hw-02-phonebook/static/js/runtime-main.fffbe61b.js.map",
+    "static/js/2.74f83195.chunk.js": "/goit-react-hw-02-phonebook/static/js/2.74f83195.chunk.js",
+    "static/js/2.74f83195.chunk.js.map": "/goit-react-hw-02-phonebook/static/js/2.74f83195.chunk.js.map",
+    "index.html": "/goit-react-hw-02-phonebook/index.html",
+    "precache-manifest.36f130b9b3e31fa2314722d87fad7e8a.js": "/goit-react-hw-02-phonebook/precache-manifest.36f130b9b3e31fa2314722d87fad7e8a.js",
+    "service-worker.js": "/goit-react-hw-02-phonebook/service-worker.js",
+    "static/js/2.74f83195.chunk.js.LICENSE.txt": "/goit-react-hw-02-phonebook/static/js/2.74f83195.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.50268c19.js",
+    "static/js/runtime-main.fffbe61b.js",
     "static/js/2.74f83195.chunk.js",
-    "static/js/main.bc39e121.chunk.js"
+    "static/js/main.20f434e9.chunk.js"
   ]
 }
