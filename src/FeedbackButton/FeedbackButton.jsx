@@ -12,7 +12,7 @@ FeedbackButton.defaultProps = { name: "default name" };
 FeedbackButton.propTypes = {
   name: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  handleClick: PropTypes.func,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default FeedbackButton;

@@ -10,7 +10,7 @@ const FeedbackSection = ({ title, children }) => (
 
 FeedbackSection.propTypes = {
   children: PropTypes.element,
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 export default FeedbackSection;

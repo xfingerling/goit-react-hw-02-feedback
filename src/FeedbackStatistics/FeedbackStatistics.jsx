@@ -10,7 +10,7 @@ const FeedbackStatistics = ({
   total,
   positivePercentage,
 }) => (
-  <>
+  <div>
     <FeedbackStatisticsItem name={"Good"} statistics={good} />
     <FeedbackStatisticsItem name={"Neutral"} statistics={neutral} />
     <FeedbackStatisticsItem name={"Bad"} statistics={bad} />
@@ -20,7 +20,7 @@ const FeedbackStatistics = ({
       statistics={positivePercentage}
       token={"%"}
     />
-  </>
+  </div>
 );
 
 FeedbackStatistics.defaultProps = {};
