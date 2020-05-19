@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 
+import {
+  countTotalFeedback,
+  countPositiveFeedbackPercentage,
+} from "../../helpers/helpers";
+
 import FeedbackNotification from "../FeedbackNotification/FeedbackNotification";
 import FeedbackSection from "../FeedbackSection/FeedbackSection";
 import FeedbackOptions from "../FeedbackOptions/FeedbackOptions";
@@ -14,36 +19,18 @@ export default class Feedback extends Component {
     this.setState((state) => ({ [targetBtnName]: state[targetBtnName] + 1 }));
   };
 
-  countTotalFeedback() {
-    const { good, neutral, bad } = this.state;
-
-    return good + neutral + bad;
-  }
-
-  countPositiveFeedbackPercentage() {
-    const percent = Math.floor(
-      (100 * this.state.good) / this.countTotalFeedback(),
-    );
-
-    return percent ? percent : 0;
-  }
-
   render() {
     const { good, neutral, bad } = this.state;
-    const totalFeedback = this.countTotalFeedback();
-    const positiveFeedbackPercentage = this.countPositiveFeedbackPercentage();
+    const totalFeedback = countTotalFeedback(good, neutral, bad);
+    const positiveFeedbackPercentage = countPositiveFeedbackPercentage(
+      good,
+      totalFeedback,
+    );
 
     return (
       <div>
         <FeedbackSection title={"Please leave feedback"}>
-          <FeedbackOptions
-            options={[
-              { name: "good", text: "Good" },
-              { name: "neutral", text: "Neutral" },
-              { name: "bad", text: "Bad" },
-            ]}
-            onLeaveFeedback={this.handleClick}
-          />
+          <FeedbackOptions onLeaveFeedback={this.handleClick} />
         </FeedbackSection>
 
         <FeedbackSection title={"Statistics"}>

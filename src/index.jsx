@@ -1,12 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { render } from "react-dom";
 
-import Feedback from "./Feedback/Feedback";
+import Feedback from "./components/Feedback/Feedback";
 
-class App extends Component {
-  render() {
-    return <Feedback />;
-  }
-}
+const App = () => <Feedback />;
 
 render(<App />, document.getElementById("root"));
